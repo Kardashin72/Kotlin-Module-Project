@@ -1,5 +1,5 @@
 
 fun main() {
-    val app = Notepad()
+    val app = NotepadApp()
     app.startMainMenu()
 }

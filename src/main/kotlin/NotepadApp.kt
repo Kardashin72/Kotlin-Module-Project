@@ -1,4 +1,4 @@
-class Notepad {
+class NotepadApp {
     val archives: MutableList<Archive> = mutableListOf()
 
     fun startMainMenu() {

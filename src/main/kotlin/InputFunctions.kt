@@ -15,10 +15,10 @@ fun correctIntInput(max: Int): Int {
     while (true) {
         correctInput = readlnOrNull()?.toIntOrNull()
         if (correctInput == null) {
-            println("Ошибка. Введите целое число, соответствующее одному из пунктов меню:")
+            println("Ошибка! Необходимо ввести число от 0 до $max. Повторите ввод:")
             continue
         } else if (correctInput !in 0..max) {
-            println("Ошибка! Такого пункта меню не существует. Повторите ввод:")
+            println("Ошибка! Такого пункта меню не существует. Необходимо ввести число от 0 до $max. Повторите ввод:")
             continue
         }
         return correctInput
